@@ -1,0 +1,85 @@
+<form>
+    <div class="row">
+        <div class="col">
+            <label style="margin-left: 10%; font-size: 19px;">FirstName</label>
+            <input type="text" style="width: 50%;margin-top: -5%;margin-left: 40%;" class="form-control"
+                placeholder="First Name" name="firstName"  [(ngModel)]="register.firstName">
+
+
+        </div>
+        <div class="col">
+            <label style="margin-left: 7%; font-size: 19px;">
+                LastName</label>
+            <input type="text" style="width: 50%;margin-top: -5%;margin-left: 28%;" class="form-control"
+                placeholder="Last Name" name="lastName"  [(ngModel)]="register.lastName">
+
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col">
+            <label style="margin-left: 10%; font-size: 19px;">Email</label>
+
+
+            <input type="text"  style="width: 50%;margin-top: -5%;margin-left: 40%;"  class="form-control"
+            placeholder="Email" name="Email"  [(ngModel)]="register.email">
+
+            <!-- <input type="text" style="width: 50%;margin-top: -5%;margin-left: 40%;" class="form-control"
+                placeholder="First name"> -->
+        </div>
+        <div class="col">
+            <label style="margin-left: 7%; font-size: 19px;">
+                LoginId</label>
+      
+            <input type="text"   style="width: 50%;margin-top: -5%;margin-left: 28%;" class="form-control"
+            placeholder="Login Name" name="loginid"  [(ngModel)]="register.loginId">
+
+
+      
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col">
+            <label style="margin-left: 10%; font-size: 19px;">Gender</label>
+            <input type="text" style="width: 50%;margin-top: -5%;margin-left: 40%;" class="form-control"
+                placeholder="Gender" name="StartPoint" [(ngModel)]="register.gender">
+        </div>
+        <div class="col">
+            <label style="margin-left: 4%; font-size: 19px;">
+                Contact number</label>
+            <input type="text" style="width: 50%;margin-top: -5%;margin-left: 28%;" class="form-control"
+                placeholder="Contact number" name="EndPoint" [(ngModel)]="register.contactNumber">
+        </div>
+    </div><br>
+    <div class="row">
+        <div class="col">
+            <label style="margin-left: 10%; font-size: 19px;">Password</label>
+            <input type="password" style="width: 50%;margin-top: -5%;margin-left: 40%;" class="form-control"
+                placeholder="Password" name="password">
+        </div>
+        <div class="col">
+            <label style="margin-left: 4%; font-size: 19px;">
+                Confirm Password</label>
+            <input type="password" style="width: 50%;margin-top: -5%;margin-left: 28%;" class="form-control"
+                placeholder="Confirm Password" name="Confirmpassword" [(ngModel)]="register.password">
+
+        </div>
+    </div>
+    <br>
+    
+    <br>
+    <div class="col">
+        <div>
+            <button class="btn btn-primary" type="submit"
+                style="margin-left: 41%;width: 10%;margin-top: 0px;" (click)="createAccount()">Save</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+        <div> <button class="btn btn-primary" type="submit"
+                style="margin-top: -66px;background-color: red;width: 10%;margin-left: 56%;">Cancel
+            </button></div>
+    </div>
+
+
+
+
+
+</form>

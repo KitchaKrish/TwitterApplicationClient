@@ -1,0 +1,21 @@
+<div class="col">
+    <label _ngcontent-fmi-c50="" style="margin-left: 19%;font-size: 19px;margin-top: 6%;"> Content</label>
+    <textarea _ngcontent-mtt-c50="" type="password" placeholder="Please Type Here" name="content" class="form-control"
+        style="width: 50%; margin-top: -3%; 
+         margin-left: 28%;" [(ngModel)]="twitterApp.content" ></textarea>
+</div>
+
+
+<div class="upload-btn-wrapper">
+    <button class="btn" style="margin-left: 37rem;margin-top: 1rem;" >Upload a file</button> 
+    <input type="file"  name="myfile" (change)="selectFile($event)" />
+</div>
+
+<div class="col">
+    <div>
+        <button _ngcontent-kde-c50="" _ngcontent-euu-c50="" type="submit" class="btn btn-primary"
+        (click)="addPost()" style="margin-left: 39%;width: 10%;margin-top: 12px;background-color: green;color: wheat;">AddPost</button>
+  </div>
+    <div> <button _ngcontent-gkv-c50="" type="submit" class="btn btn-primary" style="margin-top: -75px;background-color: red;width: 10%;margin-left: 51%;color: wheat;">Cancel </button></div>
+</div>
+

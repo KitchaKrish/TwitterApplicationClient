@@ -1,0 +1,68 @@
+<div *ngIf="forgotShow">
+    <div class="col">
+        <label _ngcontent-fmi-c50="" style="margin-left: 19%;font-size: 19px;margin-top: 6%;"> Useremail</label>
+        <input _ngcontent-mtt-c50="" type="text" placeholder="Please Type Here" name="content" class="form-control"
+            style="width: 40%; margin-top: -3%; 
+         margin-left: 28%;"   [(ngModel)]="userName">
+    </div>
+
+
+    <div class="col">
+        <div>
+            <button _ngcontent-kde-c50="" (click)="forgot()" _ngcontent-euu-c50="" type="submit" class="btn btn-primary"
+                style="margin-left: 41%;width: 10%;margin-top: 27px;background-color: green;color: wheat;">Submit</button>
+        </div>
+
+    </div>
+
+
+
+    <div *ngIf="!this.outputModel.status && this.outputModel.message!=''" role="alert"
+    class="alert alert-primary" style="margin-top: 2%;margin-left: 12%;width: 72%;">
+    {{this.outputModel.message}} </div>
+
+
+</div>
+
+
+
+<form *ngIf="forgotHide">
+
+    <h3 class="card-title" style="margin-left: 40%;">Forgot Password</h3>
+    <div class="row">
+        <div class="col">
+            <label style="margin-left: 10%; font-size: 19px;">UserName</label>
+            <label style="width: 50%;margin-top: -5%;margin-left: 5%;">Username</label>
+
+
+        </div>
+    </div>
+
+
+    <div class="row" style="    margin-top: 5%;">
+        <div class="col">
+            <label style="margin-left: 10%; font-size: 19px;">Password</label>
+            <input type="text" style="width: 50%;margin-top: -5%;margin-left: 40%;" class="form-control"
+                placeholder="Password" name="firstName"  [(ngModel)]="password">
+        </div>
+        <div class="col">
+            <label style="margin-left: 7%; font-size: 19px;">
+                Confirm Password</label>
+            <input type="text" style="width: 50%;margin-top: -5%;margin-left: 33%;" class="form-control"
+                placeholder=" Confirm Password" name="lastName"  [(ngModel)]="cnfpassword">
+
+        </div>
+    </div>
+    <div class="col">
+        <div>
+            <button _ngcontent-kde-c50="" (click)="changepassword()" _ngcontent-euu-c50="" type="submit" class="btn btn-primary"
+                style="margin-left: 41%;width: 16%;margin-top: 27px;background-color: green;color : wheat;">Change
+                Password</button>
+        </div>
+
+    </div>
+  
+
+
+
+</form>

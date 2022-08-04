@@ -1,0 +1,14 @@
+<div class="card" style="width: 50rem;margin-left: 19rem;" *ngFor="let app of twitterApp">
+
+    <div class="card-body">
+        <p><b> {{app.userName}}</b> <i _ngcontent-tki-c50="" style="margin-left: 30rem;">minits ago</i></p>
+        {{app.content}}
+    </div>
+    <img src="http://localhost:9090/{{app.imagePath}}" alt="Girl in a jacket" style="
+    width: 36rem;
+    margin-left: 8rem;"><br><br>
+    <p style="
+    margin-left: 3rem"> {{app.likeCount}} Like</p>
+    <p><button (click)="addLike(app.twitterId)" type="button" class="btn btn-light" style="margin-left: 2rem;">Like</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+</div>
